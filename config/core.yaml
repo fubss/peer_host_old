@@ -39,7 +39,7 @@ peer:
     # in the same organization. For peers in other organization, see
     # gossip.externalEndpoint for more info.
     # When used as CLI config, this means the peer's endpoint to interact with
-    address: 0.0.0.0:7051
+    address: 158.160.3.197:7051
 
     # Whether the Peer should programmatically determine its address
     # This case is useful for docker containers.
@@ -113,7 +113,7 @@ peer:
         # Overrides the endpoint that the peer publishes to peers
         # in its organization. For peers in foreign organizations
         # see 'externalEndpoint'
-        endpoint:
+        endpoint: 158.160.3.197:7051
         # Maximum count of blocks stored in memory
         maxBlockCountToStore: 10
         # Max time between consecutive message pushes(unit: millisecond)
@@ -167,7 +167,7 @@ peer:
         msgExpirationFactor: 20
         # This is an endpoint that is published to peers outside of the organization.
         # If this isn't set, the peer will not be known to other organizations.
-        externalEndpoint:
+        externalEndpoint: 158.160.3.197:7051
         # Leader election service configuration
         election:
             # Longest time peer waits for stable membership during leader election startup (unit: second)
